@@ -1,0 +1,38 @@
+{
+  "name": "genpark-supermarket-chain-omnichannel-dx-picker-os-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Supermarket chain omnichannel digital transformation (DX) operating system with in-store shelf-path picking wave optimizer and curbside pickup routing.",
+  "author": "genpark",
+  "category": "retail-dx",
+  "tags": [
+    "supermarket-dx",
+    "grocery-ecommerce",
+    "in-store-picking",
+    "omnichannel-retail",
+    "10x-stailer"
+  ],
+  "inputs": {
+    "supermarket_branch": {
+      "type": "string"
+    },
+    "online_orders_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "dx_batch_id": {
+      "type": "string"
+    },
+    "shelf_proximity_batching_efficiency_pct": {
+      "type": "number"
+    },
+    "estimated_wave_pick_time_mins": {
+      "type": "number"
+    },
+    "curbside_drive_thru_pickup_ready": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
